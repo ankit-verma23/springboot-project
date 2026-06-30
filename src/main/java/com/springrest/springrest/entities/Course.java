@@ -6,11 +6,11 @@ import jakarta.persistence.Id;
 @Entity
 public class Course {
     @Id
-    private long id;
+    private Long id;
     private String title;
     private String documentation;
 
-    public Course(long id, String title, String documentation) {
+    public Course(Long id, String title, String documentation) {
         super();
         this.id = id;
         this.title = title;
@@ -30,7 +30,7 @@ public class Course {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
